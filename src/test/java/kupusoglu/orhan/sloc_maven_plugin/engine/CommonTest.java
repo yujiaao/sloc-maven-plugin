@@ -63,7 +63,7 @@ public class CommonTest extends AbstractMojo {
                 System.out.println("EXPECTED OUTPUT:\n");
                 System.out.println(expected + "\n");
 
-                Assert.assertEquals("SLOC - failure", expected, actual);
+                Assert.assertEquals("SLOC - failure", expected, actual.trim());
             } else {
                 Assert.fail();
             }
